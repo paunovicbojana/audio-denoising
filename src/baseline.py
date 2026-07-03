@@ -123,8 +123,6 @@ def evaluate_baseline(method: str = "wiener") -> None:
     if not test_files:
         raise RuntimeError(f"No .pt files found in {test_dir}")
     random.seed(42)
-    if len(test_files) > 1000:
-        test_files = random.sample(test_files, 1000)
     print(f"[baseline:{method}] Test segments: {len(test_files)}")
 
     # Choose the denoiser function
