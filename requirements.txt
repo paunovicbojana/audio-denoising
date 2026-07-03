@@ -1,0 +1,24 @@
+# ---------------------------------------------------------------
+# PyTorch with CUDA support is NOT installed through this file
+# First, install the appropriate version for your CUDA toolkit:
+#   CUDA 12.1:  pip install torch torchaudio --index-url https://download.pytorch.org/whl/cu121
+#   CUDA 11.8:  pip install torch torchaudio --index-url https://download.pytorch.org/whl/cu118
+#   CUDA 12.4:  pip install torch torchaudio --index-url https://download.pytorch.org/whl/cu124
+#
+# Then install the remaining dependencies:
+#   pip install -r requirements.txt
+# ---------------------------------------------------------------
+
+# Audio
+soundfile>=0.12
+scipy>=1.10
+librosa>=0.10
+
+# Metrics
+pesq>=0.0.4
+pystoi>=0.3.3
+
+# Utilities
+numpy>=1.24
+matplotlib>=3.7
+wandb>=0.16
